@@ -1,15 +1,19 @@
 #include "main.h"
 
 /**
- * print_alphabet -> prints the alphabet x10
+ * print_alphabet_x10 -> prints the alphabet x10
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int j;
+	int y;
 
-	for (j = 'a'; j <= 'z'; j++)
+	for (y = 0; y < 10 ; y++)
 	{
-		_putchar(j);
+		for (j = 'a'; j <= 'z'; j++)
+		{
+			_putchar(j);
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
