@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * jack_baur -> prints 24 hours
- *
+ * jack_bauer -> prints 24 hours
  *
  */
 void jack_bauer(void)
@@ -32,10 +31,10 @@ void jack_bauer(void)
 			else if (j > 10)
 			{
 				_putchar(':');
-		 		_putchar((j / 10) + '0');
+				_putchar((j / 10) + '0');
 				_putchar((j % 10) + '0');
 			}
 
 		}
 	}
-}
+i}
