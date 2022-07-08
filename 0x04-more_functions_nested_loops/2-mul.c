@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main,h"
 /**
  * main - prints the multiplication of two numbers
  * scanf -> takes user input 

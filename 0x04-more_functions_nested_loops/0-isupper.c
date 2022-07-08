@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-
+#include "main.h"
 /**
  * main - checks if the input char is uppercase
  * Return: the return value is 1 if uppercase and 0 if lowercase

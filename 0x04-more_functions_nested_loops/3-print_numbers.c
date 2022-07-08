@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * @result -> uses the if loop to iterate from 0 to 9
