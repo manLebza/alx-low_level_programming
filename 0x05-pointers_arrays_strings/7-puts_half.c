@@ -1,5 +1,5 @@
 #include "main.h"
-+ #include <string.h>
+ #include <string.h>
 
 /**
  * puts_half -> puts half
