@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_triangle -> check for a digit
  * @size: interger type
@@ -15,18 +15,18 @@ void print_triangle(int size)
 		ii = 0;
 		while (ii < size - i)
 		{
-			_putchar(' ');
+			_putchar (' ');
 			ii++;
 		}
 		ii = 0;
 		while (ii < i)
 		{
-			_putchar('0');
+			_putchar ('#');
 			ii++;
 		}
-		_putchar('\n');
+		_putchar ('\n');
 		i++;
 	}
 	if (i == 1)
-		_putchar('\n');
+		_putchar ('\n');
 }
