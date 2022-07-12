@@ -1,18 +1,16 @@
-#include <stdio.h>
-#include <ctype.h>
+#include "main.h"
 
 /**
- *
+ * _isdigit - function that verifies if char is a digit or not
+ * @c: tested character
  * Return: the value is always 0
  */
 
-int main()
+int _isdigit(int c)
 {
-	char c;
-	c = '5';
-	printf("%d", isdigit(c));
-
-	c = '+';
-	printf("\nResult if it is not a number this is passed: %d", isdigit(c));
-	return 0;
+	if ((c >= 48) && (c <= 57))
+	{
+		return (1);
+	}
+	return (0);
 }

@@ -1,23 +1,13 @@
-#include <stdio.h>
-#include "main,h"
+#include "main.h"
+
 /**
- * main - prints the multiplication of two numbers
- * scanf -> takes user input 
- * @multiply - multiplies two numbers input by the user
+ * mul - prints the multiplication of two numbers
+ * @a: first value
+ * @b: second value
+ * Return: returns the product of the two values
  */
 
-int main()
+int mul(int a, int b)
 {
-	int num1, num2, multiply;
-
-	printf("please enter the first number: ");
-	scanf("%d", &num1);
-
-	printf("enter your second number: ");
-	scanf("%d", &num2);
-
-	multiply = num1 * num2;
-
-	printf("The product of %d and %d is: %d", num1, num2, multiply);
-	return 0;
+	return (a * b);
 }
