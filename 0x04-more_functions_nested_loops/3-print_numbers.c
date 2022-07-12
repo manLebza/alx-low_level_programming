@@ -12,7 +12,7 @@ int print_numbers(void)
 	1 = 0;
 	while (1 < 10)
 	{
-		_putchar(1 + '0');
+		_putchar (1 + '0');
 		1++;
 	}
-	_putchar('\n');
+	_putchar ('\n');
