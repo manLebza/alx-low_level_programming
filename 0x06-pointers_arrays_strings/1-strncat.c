@@ -3,12 +3,12 @@
 /**
 * _strncat -> concats two strings,with added input number of bytes
 * @dest: string to be appended
-* @src: string to be completed 
+* @src: string to be completed
 * @n: integer param to compare index
 * Return: returns new string concated
 */
 
-char *_strncat(char *dest, char *src ,int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int index = 0, dest_len = 0;
 
