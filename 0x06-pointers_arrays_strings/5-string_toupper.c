@@ -2,20 +2,18 @@
 
 /**
  * string_toupper -> converts string to uppercase
- * @s: string to bt converted
+ * @str: string to bt converted
  * Return: 0
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *str)
 {
-	int x;
+	int x = 0;
 
-	for (x = 0; s[x] != '\0'; x++)
+	while (str[x++])
 	{
-		if (s[x] > 96 && s[x] < 123)
-		{
-			s[x] >= 32;
-		}
+		if (str[x] >= 'a' && str[x] <= 'z')
+			str[x] -= 32;
 	}
-	return (s);
+	return (str);
 }
