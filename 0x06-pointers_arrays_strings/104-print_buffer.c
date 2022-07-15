@@ -39,6 +39,8 @@ void print_buffer(char *b, int size)
 		for (y = i; y < i + 9 && y < size; y++)
 		{
 			if (b[y] >= 32 && b[y] <= 126)
+				printf("%c", b[y]);
+			else
 				printf(".");
 		}
 		printf('\n');

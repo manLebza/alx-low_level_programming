@@ -6,29 +6,29 @@
  * Return: always return (s)
  */
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int x = 0;
 
-	while (s[++x])
+	while (str[++x])
 	{
-		while (!(s[x] >= 'a' && s[x] <= 'z'))
+		while (!(str[x] >= 'a' && str[x] <= 'z'))
 			x++;
 
-		if (s[x - 1] == ' ' ||
-				s[x - 1] == '\t' ||
-				s[x - 1] == '\n' ||
-				s[x - 1] == ',' ||
-				s[x - 1] == ';' ||
-				s[x - 1] == '.' ||
-				s[x - 1] == '!' ||
-				s[x - 1] == '?' ||
-				s[x - 1] == '"' ||
-				s[x - 1] == '(' ||
-				s[x - 1] == ')' ||
-				s[x - 1] == '{' ||
-				s[x - 1] == '}')
-			s[x] -= 32;
+		if (str[x - 1] == ' ' ||
+				str[x - 1] == '\t' ||
+				str[x - 1] == '\n' ||
+				str[x - 1] == ',' ||
+				str[x - 1] == ';' ||
+				str[x - 1] == '.' ||
+				str[x - 1] == '!' ||
+				str[x - 1] == '?' ||
+				str[x - 1] == '"' ||
+				str[x - 1] == '(' ||
+				str[x - 1] == ')' ||
+				str[x - 1] == '{' ||
+				str[x - 1] == '}')
+			str[x] -= 32;
 	}
-	return (s);
+	return (str);
 }
