@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * leet -> function the encodes a string
+ * leet -> function that encodes a string
  * @s: string that will be encoded
  * Return: returns encoded string
  */
 
-int leet(char *s)
+int *leet(char *s)
 {
 	int x1 = 0, x2;
 	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
