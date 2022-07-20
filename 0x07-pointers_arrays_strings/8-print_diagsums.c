@@ -12,8 +12,9 @@ void print_diagsums(int *a, int size)
 {
 	int x, size1;
 	unsigned int sumDiag1, sumDiag2;
+	
 	/*initialising values to local varaibles*/
-	size = 0;
+	size1 = 0;
 	sumDiag1 = 0;
 	sumDiag2 = 0;
 
