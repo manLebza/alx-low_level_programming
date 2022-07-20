@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_chessboard -> main function
  * @a: array of pointers
