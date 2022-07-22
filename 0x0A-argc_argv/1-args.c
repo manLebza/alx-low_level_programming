@@ -8,9 +8,9 @@
  * Return:int of the number of args.
  */
 
-int main(int argc, char *argv)
+int main(int argc, char *argv[])
 {
-
-	printf("argc = %d\n", argc);
+	printf("%d\n", argc - 1);
+	argv[0] = argv[0];
 	return (0);
 }
