@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <ctype.h>
+#include <string.h>
 /**
 * main -> entry point
 * @argc: is arg.
@@ -12,18 +13,29 @@ int main(int argc, char *argv[])
 {
 	int x, sum = 0;
 
-	if (argc > 2)
+	if (argc > 1)
 	{
-		for (x = 0; x < argc; x++)
+		for (x = 1; x < argc; x++)
 		{
-			printf("%s", argv[x] - 1);
-			sum += atoi(argv[x]);
-			argc = argc;
+			int z;
+			char *str;
+			
+			str = argv[x];
+			for (z = 0; str[z] != '\0'; z++)
+			{
+				if (str[z] < 48 || str[z] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 		}
-		printf("%d\n", sum);
-		return (sum);
 	}
-	else
-		printf("Error, please enter 2 or more numbers...\n");
-	return (1);
+	for (x = 1; x < argc; x++)
+	{
+		sum += atoi(argv[x]);
+	}
+	printf("%d\n", sum);
+	return (0);
+	}
 }
