@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		{
 			int z;
 			char *str;
-			
+
 			str = argv[x];
 			for (z = 0; str[z] != '\0'; z++)
 			{
@@ -37,5 +37,4 @@ int main(int argc, char *argv[])
 	}
 	printf("%d\n", sum);
 	return (0);
-	}
 }
