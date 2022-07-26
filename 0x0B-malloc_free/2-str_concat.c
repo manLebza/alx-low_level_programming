@@ -28,11 +28,11 @@ char *str_concat(char *s1, char *s2)
 	while (s2[h])
 		h++;
 
-	g = h + i;
+	g = i + h;
 	s = (char *)malloc(g * sizeof(char) + 1);
 	if (s == NULL)
 		return (NULL);
-
+	h = 0;
 	while (f < g)
 	{
 		if (f < i)
