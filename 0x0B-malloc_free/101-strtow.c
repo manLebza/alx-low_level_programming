@@ -34,11 +34,11 @@ int wordnos(char *s)
 char **strtow(char *str)
 {
 	char **matrix, tmp;
-	int i, k = 0, len = 0, words, c = 0, start, end;
+	int i, k = 0, len = 0, c = 0, start, end;
 
 	while (*(str + len))
 		len++;
-	words = wordnos(str);
+
 	if (matrix == NULL)
 		return (NULL);
 
@@ -65,7 +65,5 @@ char **strtow(char *str)
 		else if (c++ == 0)
 			start = i;
 	}
-
-	matrix[k];
 	return (matrix);
 }
