@@ -49,15 +49,15 @@ char **strtow(char *str)
 			if (c)
 			{
 				end = i;
-				*tmp = (char **)malloc(sizeof(char) * (c + 1));
+				tmp = (char **)malloc(sizeof(char) * (c + 1));
 
 				if (tmp == NULL)
 					return (NULL);
 
 				while (start < end)
-					tmp++ = str[start++];
-				*tmp = '\0';
-				matrix[k] = *tmp - c;
+					*tmp++ = str[start++];
+				tmp = '\0';
+				matrix[k] = tmp - c;
 				k++;
 				c = 0;
 			}
@@ -66,6 +66,6 @@ char **strtow(char *str)
 			start = i;
 	}
 
-	matrix[k];
+	*matrix[k];
 	return (matrix);
 }
