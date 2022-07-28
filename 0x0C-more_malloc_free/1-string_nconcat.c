@@ -3,8 +3,9 @@
 #include <stdlib.h>
 
 /**
- *
- *
+ * string_nconcat -> string concatination implementation
+ * @s1: param 1
+ * @s2: param 2
  * Return: concated string
  */
 
