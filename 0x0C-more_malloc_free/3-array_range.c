@@ -12,9 +12,10 @@
 
 int *array_range(int min, int max)
 {
-	int range = 0, x;
+	int range, x;
 	int *p;
 
+	range = 0;
 	if (min > max)
 		return (NULL);
 
