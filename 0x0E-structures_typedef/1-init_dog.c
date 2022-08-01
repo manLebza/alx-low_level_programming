@@ -18,8 +18,8 @@ void init_dog(struct dog *d,
 
 int main()
 {
-	struct dog p = {;
+	struct dog p;
 	char  *p = &dog;
 
-	return(dog);
+	return(p);
 }
