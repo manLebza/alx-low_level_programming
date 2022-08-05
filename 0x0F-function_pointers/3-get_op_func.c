@@ -23,11 +23,11 @@ int (*get_op_func(char *s))(int, int)
 	x = 0;
 	while (x < 5)
 	{
-		if (s[0] == ops[x].ops[0])
+		if (s[0] == ops[x].op[0])
 		{
 			return (ops[x].f);
 		}
-		++x;
+		x++;
 	}
 	return (NULL);
 }
