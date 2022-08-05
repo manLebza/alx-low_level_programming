@@ -22,12 +22,12 @@ int int_index(int *array, int size, int (*cmp)(int))
 		{
 			return (output);
 		}
-		for (x = 0; x < size; ++x)
+		for (x = 0; x < size; x++)
 		{
 			cmp(array[x]);
 			if (cmp(array[x]) > 0)
 			{
-				output = 1;
+				output = x;
 				break;
 			}
 			if ((cmp(array[x]) == (-1)))
