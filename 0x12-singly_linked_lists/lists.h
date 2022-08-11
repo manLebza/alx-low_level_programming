@@ -4,6 +4,12 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
+/**
+ * struct list_s -> new struct
+ * @str: string
+ * @len: the length of the list
+ * @next: the next element
+ */
 
 typedef struct list_s
 {
