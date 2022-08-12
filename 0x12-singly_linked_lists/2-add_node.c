@@ -1,5 +1,10 @@
 #include "lists.h"
 
+/**
+ * _strlen -> gets string length
+ * @s: the string
+ * Return: length of the string
+ */
 
 int _strlen(const char *s)
 {
@@ -9,6 +14,7 @@ int _strlen(const char *s)
 		;
 	return (x);
 }
+
 /**
  * add_node -> adds new node in begining of list
  * @head: head of node
@@ -20,7 +26,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *n_node;
 	char *content;
-	int  n_elemnt = 0, x;
+	int  n_elemnt, x;
 
 	if (str == NULL || head == NULL)
 		return (NULL);

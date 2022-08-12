@@ -2,6 +2,23 @@
 #include "lists.h"
 
 /**
+ * stringlen -> calculates len of string
+ * @str: pointer to string
+ * Return: length of the string
+ */
+
+unsigned int stringlen(const char *str)
+{
+	unsigned int i = 0;
+
+	while (str[i] != '\0';)
+	{
+		i++;
+	}
+	return (i);
+}
+
+/**
  * add_node_end -> adds new node @ end of list
  * @head: head of linked list
  * @str: string in struct.
@@ -11,8 +28,9 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n_node;
-	list_t *final = *head;
-	int n_elemnt = 0;
+	list_t *end;
+
+	end = *head;
 
 	n_node = malloc(sizeof(list_t));
 
@@ -21,23 +39,19 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	n_node->str = strdup(str);
+	n_node->len = stringlen(str);
 	n_node->next = NULL;
-	if (*head == NULL)
+	if (end == NULL)
 	{
 		*head = n_node;
 	}
 	else
 	{
-		while (final->next != NULL)
+		while (end->next != NULL)
 		{
-			final = final->next;
+			end = end->next;
 		}
-		final->next = n_node;
+		end->next = n_node;
 	}
-	while (str[n_elemnt])
-	{
-		n_elemnt++;
-	}
-	n_node->len = n_elemnt;
 	return (n_node);
 }
