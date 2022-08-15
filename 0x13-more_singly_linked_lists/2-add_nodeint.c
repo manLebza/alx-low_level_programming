@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * add_node -> adds new node to the beginning of list listint_t
@@ -7,7 +7,7 @@
  * Return: address of new node element, or NULL
  */
 
-listint_t *add_node(listint_t **head, const int n)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *newhead = NULL;
 
