@@ -6,7 +6,7 @@
  * Return: void
  */
 
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *node;
 	listint_t *temp;
@@ -15,7 +15,6 @@ void free_listint2(listint_t *head)
 		return;
 	node = *head;
 	while (*head)
-	{
 		while (node)
 		{
 			temp = node;
@@ -23,5 +22,4 @@ void free_listint2(listint_t *head)
 			free(temp);
 			*head = NULL;
 		}
-	}
 }
