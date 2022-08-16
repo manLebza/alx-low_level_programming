@@ -11,7 +11,9 @@ void print_all(const char * const format, ...)
 	va_list list;
 	int i = 0;
 	char *x;
+
 	va_start(list, format);
+
 	while (format && format[i] != '\0')
 	{
 		switch (format[i])
