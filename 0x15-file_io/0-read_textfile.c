@@ -1,4 +1,9 @@
 #include "main.h"
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/stst.h>
+#include <fcntl.h>
+#include <sys/type.h>
 
 /**
  * read_textfile -> reads textfile and prints it to POSIX std.
@@ -19,7 +24,7 @@ int read_textfile(const char *filename, size_t letters)
 	fr = open(filename, O_RDONLY);
 	if (fr == -1)
 		return (0);
-	buffer = malloc(sizeof(char)* letters);
+	buffer = malloc(sizeof(char) * letters);
 
 	if (buffer == NULL)
 	{
