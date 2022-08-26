@@ -14,25 +14,25 @@
 
 int read_textfile(const char *filename, size_t letters)
 {
-	int fr;
+	int fd;
 	ssize_t lenr, lenw;
 	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	fr = open(filename, O_RDONLY);
-	if (fr == -1)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
 	buffer = malloc(sizeof(char) * letters);
 
 	if (buffer == NULL)
 	{
-		close(fr);
+		close(fd);
 		return (0);
 	}
-	lenr = read(fr, buffer, letters);
-	close(fr);
+	lenr = read(fd, buffer, letters);
+	close(fd);
 
 	if (lenr == -1)
 	{
