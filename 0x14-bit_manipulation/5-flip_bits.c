@@ -11,23 +11,12 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	return (countbits(n ^ m));
-}
+	unsigned int count;
 
-/**
- * countbits -> returns count of set bits
- * @n: unsigned long int num
- * Return: count of set bits
- */
-
-unsigned long int countbits(unsigned long int n)
-{
-	unsigned long int count = 0;
-
-	while (n)
+	for (count = 0; n || m; n >>= 1, m >>= 1)
 	{
-		count += n & 1;
-		n >>= 1;
+		if ((n & 1) != (m & 1))
+			count++;
 	}
 	return (count);
 }
