@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -17,9 +15,11 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 
 	ui = 0;
+	len = 0;
 
-	for (len = 0; b[len] != '\0'; len++)
+	while (b[len] != '\0')
 		;
+		len++;
 
 	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
 	{
