@@ -34,3 +34,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (ui);
 }
+int main()
+{
+	return (0);
+}
