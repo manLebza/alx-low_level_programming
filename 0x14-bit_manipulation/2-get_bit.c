@@ -7,7 +7,7 @@
  * Return: the value of the bit at index
  */
 
-int get_bit(unsigned long int n, unsigned long int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int x;
 
@@ -21,5 +21,10 @@ int get_bit(unsigned long int n, unsigned long int index)
 			return (n & 1);
 		}
 	}
+
 	return (-1);
+}
+int main()
+{
+	return (0);
 }
