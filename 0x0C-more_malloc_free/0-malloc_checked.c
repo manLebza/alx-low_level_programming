@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * malloc_checked -> checks the size of memory
- * @b: unsigned int parmeter
- * Return: Null
+ * malloc_checked -> checks the size of memory and allocates memory
+ * @b: unsigned int amount of bytes parmeter
+ * Return: Pointer to the allocated memory
  */
 
 void *malloc_checked(unsigned int b)
 {
-	void *x;
+	char *x;
 
 	x = malloc(b);
 	if (x == NULL)
