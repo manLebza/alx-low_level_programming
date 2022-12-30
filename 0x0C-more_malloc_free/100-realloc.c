@@ -11,7 +11,7 @@
  * Return: pointer to new memory block,NULL || ptr
  */
 
-void *_realloc(void *ptr, unsigned int old_size, insigned int new_size)
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 
 	if (new_size == 0 && ptr != NULL)
